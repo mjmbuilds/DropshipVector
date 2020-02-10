@@ -14,7 +14,11 @@ public:
 	// Sets default values for this actor's properties
 	UCppFunctionLibrary();
 
-	/** rwtrwetw */
+	/** Sets the Angular Rotation Offset for a Physics Constraint */
 	UFUNCTION(BlueprintCallable, Category = PhysicsConstraint)
-		static void SetAngularRotationOffset(UPhysicsConstraintComponent* PhysicsConstraint, float X, float Y, float Z);
+	static void SetAngularRotationOffset(UPhysicsConstraintComponent* PhysicsConstraint, float X, float Y, float Z);
+
+	///** Checks if the body has been split into multiple bodies */
+	//UFUNCTION(BlueprintCallable, Category = BodyUtil)
+	//static void RecalcBodyUtil(UPrimitiveComponent* Members);
 };
